@@ -55,7 +55,7 @@ const Home = () => {
             </div>
             {
                 displayCoin.slice(0,10).map((item, index)=>(
-                    <Link className="table-layout" key={index}>
+                    <Link to={`/coin/${item.id}`} className="table-layout" key={index}>
                         <p>{item.market_cap_rank}</p>
                         <div>
                             <img src={item.image} alt="" />
